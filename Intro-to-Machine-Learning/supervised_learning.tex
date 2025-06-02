@@ -36,7 +36,7 @@
 \end{enumerate}
 
 \section*{Data}
-Datasets consist of individual entries that contain \textbf{features} $(X)$ and a \textbf{label}. It similar to a single row in a spreadsheet. \newline
+Datasets consist of individual entries that contain \textbf{features} $(X)$ and a \textbf{label} $(y)$. It similar to a single row in a spreadsheet. \newline
 \textbf{Features}: values that a supervised model uses to predict the label. \newline
 \textbf{Label}: value that we want to predict. \newline
 
@@ -56,8 +56,25 @@ Screen Size and Type & 15.6" Full HD IPS \\
 \end{tabularx}
 \end{center}
 
-\noindent Good datasets are both large (high in quantity) and highly diverse (covering a wide range of categories).
+\noindent Good datasets are both large (high in quantity) and highly diverse (covering a wide range of categories). Datasets with more features doesn't always produce better predictions because some features might not have significance to the label.
 
+\section*{Model}
+A mathematical model that defines the relationship between input feature patterns and output labels.
+
+\section*{Training}
+Training a model requires a dataset consisting of input features and their corresponding labels. The objective is to find the best solution for predicting the labels from the features. How do we determine if it's a good solution? By comparing the model's predictions to the actual labels. The difference between them is used to compute the \textbf{loss}. This loss guides how the model updates its internal parameters to improve its predictions over time. \newline
+
+\noindent Prediction $\rightarrow$ Loss Calculation $\rightarrow$ Parameter Update
+
+\noindent Throughout training, we can experiment with different parameters and input features to improve the model's predictions. Feature selection allows us to choose which inputs the model uses.
+
+\section*{Evaluating}
+In this stage, we evaluate how well the model performs. We compare the model's prediction to the label's true values. \newline
+
+\noindent Prediction $\rightarrow$ Loss Calculation ($\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$)
+
+\section*{Inference}
+Once the model has achieved good performance, it can be used to make predictions on unlabeled data.
 
 \section*{References}
 \begin{itemize}
