@@ -1,0 +1,69 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{array}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{amsmath}    
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+
+\title{Supervised Learning}
+\author{Christian Darvin}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\section*{Core Features}
+\begin{enumerate}
+    \item Data
+    \item Model
+    \item Training
+    \item Evaluating
+    \item Inference
+\end{enumerate}
+
+\section*{Data}
+Datasets consist of individual entries that contain \textbf{features} $(X)$ and a \textbf{label}. It similar to a single row in a spreadsheet. \newline
+\textbf{Features}: values that a supervised model uses to predict the label. \newline
+\textbf{Label}: value that we want to predict. \newline
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{Feature} & \textbf{Value} \\
+\midrule
+Operating System & Windows 11 \\
+CPU & Intel Core i7-12700H \\
+RAM & 16GB DDR4 \\
+GPU & NVIDIA RTX 3060 \\
+Brand & ASUS \\
+Screen Size and Type & 15.6" Full HD IPS \\
+\textbf{Price (\$)} & \textbf{1,299} \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\noindent Good datasets are both large (high in quantity) and highly diverse (covering a wide range of categories).
+
+
+\section*{References}
+\begin{itemize}
+    \item \href{https://developers.google.com/machine-learning/intro-to-ml/supervised}{Supervised Learning - Google Developers}
+    \item \href{https://developers.google.com/machine-learning/glossary}{Machine Learning Glossary - Google Developers}
+\end{itemize}
+
+
+\end{document}

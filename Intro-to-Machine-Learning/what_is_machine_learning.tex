@@ -1,0 +1,100 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{array}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{amsmath}    
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+\title{What is Machine Learning?}
+\author{Christian Darvin}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{What is Machine Learning?}
+Machine Learning (ML) gradually learns how to make predictions by studying lots of data.
+
+\section*{Types of Machine Learning Systems}
+\begin{enumerate}
+    \item Supervised Learning
+    \item Unsupervised Learning
+    \item Reinforcement Learning
+    \item Generative AI
+\end{enumerate}
+
+\section*{Supervised Learning}
+The ML system is trained with the correct results. Imagine a student who is preparing for an upcoming exam. The student reviews old exams that contain both questions and answers in order to prepare for the new one.
+
+\subsection*{Use Case 1: Regression (\#)}
+A \textbf{regression model} predicts numerical values.
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{}lXl@{}}
+\toprule
+Scenario & Possible Input Data ($X$) & Predicted Number ($y$) \\
+\midrule
+Future Laptop Price & Operating System, CPU, RAM, GPU, Brand, Screen Size and Type & Price of the laptop \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection*{Use Case 2: Classification (?)}
+A \textbf{classification model} predicts the likelihood that something belongs to a category. It returns a value indicating whether or not the item is in the category.
+
+\subsubsection*{Binary Classification (0/1)}
+Yields only two values: \texttt{[cake, not cake]}
+
+\subsubsection*{Multiclass Classification (*)}
+Yields more than two values: \texttt{[car, truck, motorcycle, bicycle, train]}
+
+\section*{Unsupervised Learning}
+The ML system isn't trained with the correct answers, nor does it contain any correct answers. It doesn't make predictions; instead, it finds meaningful patterns in the data.
+
+\subsection*{Use Case 1: Clustering}
+It finds data points that separate natural groupings and clusters those with similar features.
+
+\section*{Reinforcement Learning}
+The ML system makes predictions by obtaining \textbf{rewards} or \textbf{penalties} based on actions performed within an environment. It follows a \textbf{policy} which dictates the best strategy for getting the most rewards.
+
+\section*{Generative AI}
+The ML system returns content from the user input. It is \textit{multimodal}, capable of handling text, images, and video.
+
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Input & Output \\
+\midrule
+Text & Text \\
+Text & Image \\
+Text & Video \\
+Text & Code \\
+Image & Text \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The model is initially trained using an unsupervised learning approach, allowing it to learn patterns from the data. Afterward, a supervised or reinforcement learning approach is applied using data related to the model's intended capabilities.
+
+\section*{References}
+\begin{itemize}
+    \item \href{https://developers.google.com/machine-learning/intro-to-ml/what-is-ml}{What is Machine Learning? - Google Developers}
+    \item \href{https://developers.google.com/machine-learning/glossary}{Machine Learning Glossary - Google Developers}
+\end{itemize}
+
+
+\end{document}
